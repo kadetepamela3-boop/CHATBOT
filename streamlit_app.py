@@ -84,7 +84,7 @@ if not GROQ_API_KEY:
 
 DATA_PATH = os.environ.get("SM01_DATA_PATH", "faq_qns22_csv.csv")
 EMBED_MODEL_NAME = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
-GROQ_MODEL = "llama-3.3-70b-versatile"
+GROQ_MODEL = "openai/gpt-oss-120b"
 TOP_K = 3
 # L2 distances for good matches with this model are typically ~9–32 (see retrieval tests).
 NO_MATCH_THRESHOLD = 32
